@@ -32,7 +32,22 @@ cd golagobar
 go get ./...
 ```
 
-### Update your config file
+### Step 3
+###### Create config.json file and configure as per sample given below
+
+### Step 3
+###### Run the following commands after setting up your config
+```sh
+make run
+```
+
+##### OR
+```sh
+make build
+./golagobar
+```
+
+### Sample config.json file
 ```json
 {
   "database": {

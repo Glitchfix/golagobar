@@ -29,7 +29,6 @@ func LoginHandler(c *gin.Context) {
 		c.Next()
 		return
 	}
-	print("still")
 	result, err := services.LoginService(c.Request.Context(), userLogin)
 	if nil != err {
 		c.Set("status", http.StatusUnauthorized)

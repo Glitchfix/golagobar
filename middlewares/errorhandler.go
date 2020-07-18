@@ -9,7 +9,6 @@ import (
 // ErrorMiddleware - Errorenticate endpoints-
 func ErrorMiddleware(c *gin.Context) {
 	var errorMsg gin.H
-	print("NOPE")
 	status, _ := c.Get("status")
 
 	switch status.(int) {

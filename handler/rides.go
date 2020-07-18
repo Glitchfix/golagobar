@@ -40,7 +40,6 @@ func NearbyRidesHandler(c *gin.Context) {
 		c.Next()
 		return
 	}
-	print(coordinates)
 	locations, err := services.NearbyRide(c.Request.Context(), coordinates)
 	if nil != err {
 		logrus.Errorln(err)

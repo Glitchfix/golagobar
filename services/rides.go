@@ -2,7 +2,6 @@ package services
 
 import (
 	"context"
-	"fmt"
 	"math/rand"
 	"time"
 
@@ -33,7 +32,6 @@ func nextRideID(ctx context.Context) (sequenceID *int, err error) {
 
 // NearbyRide - create a new ride
 func NearbyRide(ctx context.Context, location models.Coordinates) (locations []models.Location, err error) {
-	fmt.Println(location)
 	filter := bson.M{
 		"near":          bson.M{"type": "Point", "coordinates": location},
 		"distanceField": "distance",

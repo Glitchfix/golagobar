@@ -2,7 +2,6 @@ package config
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"os"
 
@@ -40,15 +39,12 @@ func Init(fname *string) {
 	file, _ := os.Open(*fname)
 	defer file.Close()
 	data, _ := ioutil.ReadAll(file)
-	fmt.Println(*fname)
-	fmt.Println(string(data))
 	config := configuration{}
 	err := json.Unmarshal(data, &config)
 	if nil != err {
 		logrus.Fatalln("error:", err)
 	}
 
-	fmt.Println(config)
 	DB = &config.DB
 	Server = &config.Server
 }
