@@ -35,7 +35,7 @@ go get ./...
 ### Step 3
 ###### Create config.json file and configure as per sample given below
 
-### Step 3
+### Step 4
 ###### Run the following commands after setting up your config
 ```sh
 make run
