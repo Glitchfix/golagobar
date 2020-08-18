@@ -1,7 +1,4 @@
 # Gola/Gobar
-This repo is part of one of my interview assignment.
-###### Start date: 17/07/2020
-###### End date: 18/07/2020
 
 This is just a minimalistic sample application to demonstrate my coding practice in Golang and MongoDB.
 This application is a subset of the needs of a cab booking platform like Gobar/Gola.
